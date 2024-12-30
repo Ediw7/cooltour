@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Camera, Compass, Gamepad, Map, Menu, UserCircle, X } from "lucide-react";
+import {
+  Camera,
+  Compass,
+  Gamepad,
+  Map,
+  Menu,
+  UserCircle,
+  X,
+} from "lucide-react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,60 +17,64 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-indigo-50/95 backdrop-blur-md border-b border-blue-200 fixed w-full z-50 shadow-sm">
+    <nav className="bg-white fixed w-full z-50 shadow-2xl">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-3">
-     
-          <div className="text-2xl font-bold flex items-center gap-2">
+          {/* <div className="text-2xl font-bold flex items-center gap-2">
             <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
               COOL
             </span>
             <span className="text-indigo-700">TOUR</span>
+          </div> */}
+          <div className="text-2xl font-bold flex items-center gap-2">
+            <span className="bg-[#d23e2c] text-transparent bg-clip-text font-playfair">
+              cooltour.
+            </span>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="/"
-              className="text-indigo-600 hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium"
+              className="text-[#d23e2c] hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium font-poppins"
             >
-              <Compass className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" />
+              {/* <Compass className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" /> */}
               <span>Home</span>
             </a>
             <a
               href="/ragam-budaya"
-              className="text-indigo-600 hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium"
+              className="text-[#d23e2c] hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium font-poppins"
             >
-              <Map className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              {/* <Map className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" /> */}
               <span>Ragam Budaya</span>
             </a>
             <a
               href="/games"
-              className="text-indigo-600 hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium"
+              className="text-[#d23e2c] hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium font-poppins"
             >
-              <Gamepad className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
+              {/* <Gamepad className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" /> */}
               <span>Games</span>
             </a>
             <a
               href="/petualangan-budaya"
-              className="text-indigo-600 hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium"
+              className="text-[#d23e2c] hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium font-poppins"
             >
-              <Camera className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              {/* <Camera className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" /> */}
               <span>Petualangan Budaya</span>
             </a>
             {/* New "Tentang Kami" Menu Item */}
             <a
               href="/tentang-kami"
-              className="text-indigo-600 hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium"
+              className="text-[#d23e2c] hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font- font-poppins"
             >
-              <UserCircle className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              {/* <UserCircle className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" /> */}
               <span>Tentang Kami</span>
             </a>
             <a
               href="/profile"
-              className="text-indigo-600 hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium"
+              className="text-[#d23e2c] hover:text-blue-500 transition-all duration-300 flex items-center gap-2 group font-medium font-poppins"
             >
-              <UserCircle className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              {/* <UserCircle className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" /> */}
               <span>Profile</span>
             </a>
           </div>
